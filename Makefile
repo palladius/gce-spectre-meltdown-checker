@@ -9,7 +9,8 @@ setup-once.touch:
 	./setup-project-once.sh
 
 images.list:
-	gcloud compute images list | egrep -v "windows|ric-cccwiki" | awk '{print $$1}' | grep -v NAME > images.list
+	# You might want to also remove your own project id? mnaybe not.
+	gcloud compute images list | egrep -v "windows" | awk '{print $$1}' | grep -v NAME > images.list
 
 run: config
 	@echo "You should have a list of images. Feel free to edit them (if so press CTRL-C)"
