@@ -1,7 +1,8 @@
 INSTALL
 =======
 
-This repo tries to check Spectre/Meltdown vulnerabilites on any VM on GCE.
+This repo tries to check Spectre/Meltdown vulnerabilites on any possible VM
+image on GCE.
 
     make config
     # edit `env.sh` thus created with your `PROJECT_ID` and stuff

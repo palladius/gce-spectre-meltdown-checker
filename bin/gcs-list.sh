@@ -2,4 +2,4 @@
 
 . env.sh
 
-gsutil ls gs://$BUCKET/
+gsutil ls gs://$BUCKET/spectre/
